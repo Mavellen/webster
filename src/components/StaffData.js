@@ -44,7 +44,7 @@ const StaffData = () => {
             <ul>
                 {
                     staff.map((staff) => {
-                        return <li key={staff.id}> {staff.firstname} {staff.lastname} </li>
+                        return <li key={staff.id}> Staff {staff.firstname} {staff.lastname} with ID {staff.id} joined on {staff.jD.toISOString()}</li>
                     })
                 }
             </ul>

@@ -88,10 +88,10 @@ const StudentData = (studente) => {
         return students.filter(filterStudentsByCourse)
             .filter(filterStudentsBySemester)
             .map((s) => {
-                return <li key={s.id}> {s.firstname}  {s.lastname} </li>
+                return <li key={s.id}> Student {s.firstname} {s.lastname} with ID {s.id} joined on {s.jD.toISOString()}</li>
             })
     }
-    
+
     return (
         <div id="studentList">
             <Selector onChangeCourse={ChangeCourse} onChangeSemester={ChangeSemester}/>
